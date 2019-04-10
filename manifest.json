@@ -1,0 +1,46 @@
+{
+    "manifest_version": 2,
+    "name": "Web Page Auto Downloader",
+    "version": "1.0.0",
+    "description": "网页自动下载器",
+    "icons": {
+        "16": "img/get_started16.png",
+        "32": "img/get_started32.png",
+        "48": "img/get_started48.png",
+        "128": "img/get_started128.png"
+    },
+    "options_page": "html/options.html",
+    "browser_action": {
+        "default_icon": {
+            "16": "img/get_started16.png",
+            "32": "img/get_started32.png",
+            "48": "img/get_started48.png",
+            "128": "img/get_started128.png"
+        },
+        "default_title": "Web Page Auto Downloader",
+        "default_popup": "html/popup.html"
+    },
+    
+    "devtools_page": "html/devtool.html",
+
+    "background": {
+        "scripts": [
+            "js/background.js"
+        ]
+    },
+    "permissions": [
+        "webRequestBlocking",
+        "webRequest",
+        "contextMenus",
+        "storage",
+        "webNavigation",
+        "declarativeContent",
+        "activeTab",
+        "tabs",
+        "http://*/",
+        "https://*/",
+        "*://*/*",
+        "downloads",
+        "downloads.shelf"
+    ]
+}
